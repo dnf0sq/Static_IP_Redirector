@@ -35,24 +35,40 @@ Note: First run the server, then the client.
 
 On server
     apt-get install screen node unzip
+    
     mkdir -p ~/siprs
+    
     cd ~/siprs
+    
     wget https://github.com/dnf0sq/Static_IP_Redirector/archive/master.zip
+    
     unzip -j master.zip
+    
     rm master.zip
+    
     rm static_ip_client.js
+    
     npm install socket.io sprintf
+    
     screen -dmS SIPRS node static_ip_server.js
     
 On client
     apt-get install screen node unzip
+    
     mkdir -p ~/siprc
+    
     cd ~/siprc
+    
     wget https://github.com/dnf0sq/Static_IP_Redirector/archive/master.zip
+    
     unzip -j master.zip
+    
     rm master.zip
+    
     rm static_ip_server.js
+    
     npm install socket.io-client
+    
     screen -dmS SIPRC node static_ip_client.js
     
 To access the screen (only needed on the server):

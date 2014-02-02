@@ -4,15 +4,15 @@
 Node.JS based server and client scripts, in which server forwards traffic using iptables to the client on specified ports, and updates clients IP when it changes.
 
 ## Requirements
-Packages on client and the server
+Packages on client and the server:
     node
 
-Modules on server
+Modules on server:
     socket.io, sprintf
-Modules on client
+Modules on client:
     socket.io-client
     
-OS
+OS:
     Linux
   
 ## Commands
